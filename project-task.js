@@ -61,13 +61,14 @@ Step-by-Step:
 🔹 Task 3: Generate Discounted Prices
 
 Write a higher-order function `applyDiscount` that:
-- Accepts a discount percentage
-- Returns a function that takes a product and returns a discounted price
+- Accepts a discount percentage as a whole number
+- Returns a function that takes in a product object and returns a discounted price
 
 Step-by-Step:
-1. Define a function `applyDiscount` that takes `discountPercent`.
+1. Define a function `applyDiscount` with a parameter `discountPercet`.
 2. Return a new function that takes a product object.
-3. Use this returned function inside a `map()` call to apply discounts to all products.
+3. Use this returned function inside a `forEach()` call to add a new property, `salePrice`, to each product object.
+4. Print the array of products to verify the new property and value have been added to each product object.
 */
 
 
